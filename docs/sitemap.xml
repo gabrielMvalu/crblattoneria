@@ -6,4 +6,28 @@
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>http://www.crblattoneria.com/despre.html</loc>
+        <lastmod>2024-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.crblattoneria.com/servicii.html</loc>
+        <lastmod>2024-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.crblattoneria.com/portofoliu.html</loc>
+        <lastmod>2024-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>http://www.crblattoneria.com/contact.html</loc>
+        <lastmod>2024-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
