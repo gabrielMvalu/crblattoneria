@@ -27,19 +27,22 @@ nav {
     padding: 1rem 5%;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap; /* Permite elementelor să treacă pe rândul următor dacă nu este suficient spațiu */
 }
 
 .logo img {
-    height: 100px;
+    height: 70px; /* Micșorăm puțin logo-ul */
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap; /* Permite elementelor să treacă pe rândul următor dacă nu este suficient spațiu */
+    justify-content: center; /* Centrează elementele pe ecrane mici */
 }
 
 nav ul li {
-    margin-left: 2rem;
+    margin: 0.5rem;
 }
 
 nav ul li a {
@@ -47,6 +50,7 @@ nav ul li a {
     color: #333;
     font-weight: bold;
     transition: color 0.3s ease;
+    font-size: 0.9rem; /* Micșorăm puțin fontul */
 }
 
 nav ul li a:hover {
@@ -113,13 +117,27 @@ footer {
         flex-direction: column;
     }
 
+    .logo {
+        margin-bottom: 1rem;
+    }
+
     nav ul {
-        margin-top: 1rem;
+        width: 100%;
+        justify-content: space-around;
     }
 
     nav ul li {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 0.25rem;
+    }
+
+    main {
+        padding-top: 120px; /* Ajustăm padding-ul superior pentru a compensa header-ul mai înalt */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 0.8rem; /* Micșorăm și mai mult fontul pe ecrane foarte mici */
     }
 }
 
