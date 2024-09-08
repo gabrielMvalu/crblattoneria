@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
-
-Sitemap: http://www.crblattoneria.com/sitemap.xml
+Disallow: /admin/     # Blochează paginile admin (exemplu)
+Allow: /               # Permite accesul la toate celelalte pagini
+Sitemap: https://www.siteul-tau.ro/sitemap.xml
