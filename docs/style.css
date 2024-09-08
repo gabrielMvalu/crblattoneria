@@ -311,30 +311,32 @@ h1 {
     header {
         display: flex;
         justify-content: space-between; /* Logo pe stânga, meniul pe dreapta */
-        align-items: center; /* Vertical align */
+        align-items: center; /* Aliniere verticală */
         height: 60px; /* Înălțime mai mică pentru header */
         padding: 0 10px;
     }
 
     .logo img {
-        height: 25px; /* Dimensiune mai mică pentru logo */
+        height: 25px; /* Asigură vizibilitatea logo-ului */
+        max-width: 100px; /* Limitează lățimea logo-ului pentru a nu ocupa prea mult spațiu */
     }
 
     nav ul {
-        display: flex; /* Asigură-te că meniul rămâne pe orizontală */
-        flex-direction: row; /* Orizontal */
+        display: flex; /* Asigură poziționarea pe orizontală a meniului */
+        flex-direction: row; /* Meniul rămâne orizontal */
         padding: 0;
         margin: 0;
         list-style: none;
     }
 
     nav ul li {
-        margin-left: 10px; /* Distanță între elemente */
+        margin-left: 5px; /* Reducem spațiul dintre elementele de navigație */
     }
 
     nav ul li a {
         font-size: 0.75rem; /* Dimensiunea textului */
         text-decoration: none;
         color: #000; /* Culoarea textului */
+        padding: 0 5px; /* Spațiu suplimentar în jurul textului */
     }
 }
