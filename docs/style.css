@@ -309,24 +309,23 @@ h1 {
 /* Media Queries pentru ecrane mici */
 @media (max-width: 768px) {
     header {
-        height: 70px;
-        flex-direction: column; /* Stack logo and nav vertically */
+        height: 100px;
+        padding: 0 10px;
     }
 
     .logo img {
-        height: 25px; /* Smaller logo */
+        height: 25px; /* Smaller logo for small screens */
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center; /* Center the menu on smaller screens */
+        flex-direction: row; /* Keep the nav items in a row (horizontal) */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin-left: 10px;
     }
 
     nav ul li a {
-        font-size: 0.75rem; /* Smaller font size */
+        font-size: 0.75rem; /* Smaller font size for small screens */
     }
 }
