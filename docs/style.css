@@ -199,42 +199,6 @@ footer {
     border-top: 1px solid #444;
 }
 
-/* Media Queries pentru ecrane mici */
-@media (max-width: 768px) {
-    header {
-        height: 50px;
-    }
-
-    main {
-        padding-top: 60px;
-    }
-
-    .logo img {
-        height: 35px;
-    }
-
-    nav ul li a {
-        font-size: 0.85rem;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-section {
-        margin-bottom: 2rem;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul li a {
-        font-size: 0.8rem;
-    }
-}
-
 /* Secțiunile de servicii */
 .servicii {
     display: grid;
@@ -342,16 +306,10 @@ h1 {
 }
 
 
-
-
-
-
-
-
 /* Media Queries pentru ecrane mici */
 @media (max-width: 768px) {
     header {
-        height: 50px;
+        height: 70px;
     }
 
     main {
@@ -363,7 +321,7 @@ h1 {
     }
 
     nav ul li a {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .footer-content {
@@ -375,11 +333,5 @@ h1 {
     .footer-section {
         margin-bottom: 2rem;
         width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul li a {
-        font-size: 0.8rem;
     }
 }
