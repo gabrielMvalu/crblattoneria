@@ -309,29 +309,24 @@ h1 {
 /* Media Queries pentru ecrane mici */
 @media (max-width: 768px) {
     header {
-        height: 100px;
-    }
-
-    main {
-        padding-top: 60px;
+        height: 70px;
+        flex-direction: column; /* Stack logo and nav vertically */
     }
 
     .logo img {
-        height: 25px;
+        height: 25px; /* Smaller logo */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Center the menu on smaller screens */
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 
     nav ul li a {
-        font-size: 0.75rem;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-section {
-        margin-bottom: 2rem;
-        width: 100%;
+        font-size: 0.75rem; /* Smaller font size */
     }
 }
