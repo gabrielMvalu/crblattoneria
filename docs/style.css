@@ -309,23 +309,32 @@ h1 {
 /* Media Queries pentru ecrane mici */
 @media (max-width: 768px) {
     header {
-        height: 100px;
+        display: flex;
+        justify-content: space-between; /* Logo pe stânga, meniul pe dreapta */
+        align-items: center; /* Vertical align */
+        height: 60px; /* Înălțime mai mică pentru header */
         padding: 0 10px;
     }
 
     .logo img {
-        height: 25px; /* Smaller logo for small screens */
+        height: 25px; /* Dimensiune mai mică pentru logo */
     }
 
     nav ul {
-        flex-direction: row; /* Keep the nav items in a row (horizontal) */
+        display: flex; /* Asigură-te că meniul rămâne pe orizontală */
+        flex-direction: row; /* Orizontal */
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     nav ul li {
-        margin-left: 10px;
+        margin-left: 10px; /* Distanță între elemente */
     }
 
     nav ul li a {
-        font-size: 0.75rem; /* Smaller font size for small screens */
+        font-size: 0.75rem; /* Dimensiunea textului */
+        text-decoration: none;
+        color: #000; /* Culoarea textului */
     }
 }
