@@ -307,159 +307,51 @@ h1 {
 
 
 
+.topnav a {
+    float: left;
+    display: block;
+    color: white; /* Culoarea textului pentru linkuri */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
 
-/* Stilul pentru desktop */
+/* Efect la hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Stil pentru linkul activ */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Butonul hamburger ascuns pe desktop */
 .topnav .icon {
-  display: none;
+    display: none;
 }
-
-#myLinks {
-  display: none; /* Menținem meniul normal vizibil pe desktop */
-}
-
-
-
 
 
 /* Media Queries pentru dispozitive mobile */
-@media (max-width: 480px) {
-    /* Setări generale pentru mobil */
-    :root {
-        --primary-color: #007bff;
-        --secondary-color: #0056b3;
-        --text-color: #333;
-        --background-color: linear-gradient(to right, #2980B9, #6DD5FA);
-        --footer-background: rgba(255, 255, 255, 0.8);
-        --footer-text: #333;
-    }
-
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.6;
-        background: var(--background-color); 
-        color: var(--text-color);
-    }
-
-    /* Mobile container settings */
-    .mobile-container {
-        max-width: 480px;
-        margin: auto;
-        background-color: #555;
-        height: 500px;
-        color: white;
-        border-radius: 10px;
-    }
-
-    /* Navigation */
-    .topnav {
-        overflow: hidden;
-        background-color: #333;
-        position: relative;
-    }
-
-    .topnav #myLinks {
-        display: none;
-    }
-
+@media screen and (max-width: 600px) {
     .topnav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
+        display: none; /* Ascunde linkurile pe mobil */
     }
 
     .topnav a.icon {
-        background: black;
+        display: block; /* Arată butonul hamburger pe mobil */
+        float: right;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a {
         display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-    .active {
-        background-color: #04AA6D;
-        color: white;
-    }
-
-    /* Header style for mobile */
-    header {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        position: fixed;
-        width: 100%;
-        height: 70px;
-        top: 0;
-        z-index: 1000;
-        align-items: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    /* Other mobile-specific styles for main, cards, etc. */
-    main {
-        padding-top: 80px;
-        padding-left: 5%;
-        padding-right: 5%;
-        max-width: 480px;
-        margin: 0 auto;
-    }
-
-    .card {
-        background: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-        padding: 1.5rem;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-        transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-        transform: translateY(-5px);
-    }
-
-    .card h3 {
-        margin-bottom: 1rem;
-        color: #007bff;
-    }
-
-    .card a {
-        display: inline-block;
-        margin-top: 1rem;
-        color: #007bff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    /* Footer */
-    footer {
-        background: var(--footer-background);
-        backdrop-filter: blur(10px);
-        color: var(--footer-text);
-        padding: 2rem 0;
-        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    /* Adjusting font size and layout for smaller screens */
-    #acasa h1, #acasa p {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-section {
-        margin-bottom: 2rem;
-        width: 100%;
+        text-align: left;
     }
 }
