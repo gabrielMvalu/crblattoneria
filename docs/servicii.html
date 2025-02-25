@@ -1,129 +1,321 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicii - CRB Lattoneria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>I Nostri Servizi - CRB Lattoneria</title>
+    <meta name="description" content="Scopri i servizi professionali di CRB Lattoneria: coperture civili e industriali, rimozione amianto e lavori edili di alta qualità.">
+    <meta name="keywords" content="coperture civili, coperture industriali, rimozione amianto, lavori edili, CRB Lattoneria, servizi lattoneria">
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="logocrblattoneria.png" alt="CRB Lattoneria Logo">
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logocrblattoneria.png" alt="CRB Lattoneria Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Menu principale">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="despre.html">Chi siamo</a></li>
+                    <li><a href="servicii.html" class="active">I Nostri Servizi</a></li>
+                    <li><a href="portofoliu.html">Portafoglio</a></li>
+                    <li><a href="contact.html">Contattaci</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="despre.html">Chi siamo</a></li>
-                <li><a href="servicii.html">I Nostri Servizi</a></li>
-                <li><a href="portofoliu.html">Portafoglio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="acasa">
-            <h1>I Nostri Servizi</h1>
-        </section>
-        <section class="servicii">
-            <div class="serviciu">
-                <h2>Coperture Civili - Soluzioni Durature e Performanti</h2>
-                <p>La nostra azienda offre servizi professionali e completi di installazione, riparazione e manutenzione di coperture per edifici residenziali e commerciali. Che si tratti di un nuovo progetto o della modernizzazione di una copertura esistente, il nostro team di specialisti garantisce l'esecuzione ai più alti standard di qualità.</p>
-                <p>Ci vantiamo di utilizzare i materiali più performanti, che garantiscono una lunga durata e resistenza agli agenti esterni, come condizioni meteorologiche avverse. Inoltre, le nostre moderne tecniche di installazione contribuiscono all'efficienza energetica dell'edificio, riducendo la dispersione di calore e migliorando il comfort termico.</p>
-                <h3>Perché scegliere noi?</h3>
-                <ul>
-                    <li>Materiali di alta qualità per una copertura duratura</li>
-                    <li>Tecniche innovative per una maggiore efficienza energetica</li>
-                    <li>Servizi rapidi e affidabili, adattati alle esigenze di ogni cliente</li>
-                    <li>Supporto completo dalla consulenza alla realizzazione del progetto</li>
-                </ul>
-                <p>Per una copertura che unisce sicurezza ed estetica, scegli i nostri professionisti e goditi una soluzione ottimale per la tua casa o il tuo edificio!</p>
+        <section class="page-hero" id="acasa">
+            <div class="container">
+                <h1>I Nostri Servizi</h1>
+                <p class="subtitle">Soluzioni professionali e affidabili</p>
             </div>
-            <div class="serviciu">
-                <h2>Coperture Industriali - Soluzioni Robuste ed Efficienti</h2>
-                <p>La nostra azienda è specializzata nell'installazione e nella manutenzione di coperture per edifici industriali di grandi dimensioni, offrendo soluzioni durevoli e performanti. Che si tratti di nuove costruzioni o della modernizzazione di strutture esistenti, il nostro team garantisce il rispetto delle più severe norme di sicurezza ed efficienza.</p>
-                <p>Utilizziamo materiali della migliore qualità, resistenti alle condizioni difficili tipiche degli ambienti industriali, per garantire una protezione ottimale a lungo termine. Le tecnologie di installazione avanzate che adottiamo contribuiscono a migliorare l'efficienza energetica e a ridurre i costi di manutenzione.</p>
-                <h3>Perché scegliere noi?</h3>
-                <ul>
-                    <li>Materiali durevoli e resistenti alle condizioni estreme degli ambienti industriali</li>
-                    <li>Tecniche moderne per una maggiore efficienza energetica</li>
-                    <li>Esecuzione rapida e affidabile, adattata alle esigenze specifiche di ogni progetto</li>
-                    <li>Assistenza completa, dalla pianificazione alla realizzazione del progetto</li>
-                </ul>
-                <p>Per una copertura industriale che unisce performance e sicurezza, affidatevi a noi e beneficiate di soluzioni di alta qualità per qualsiasi tipo di edificio industriale!</p>
-            </div>            
-            <div class="serviciu">
-                <h2>Rimozione Amianto - Sicurezza e Protezione per l'Ambiente e la Salute</h2>
-                <p>Il nostro team certificato offre servizi professionali di rimozione dell'amianto, garantendo l'eliminazione sicura di questo materiale pericoloso da edifici e strutture. Lavoriamo in conformità con tutte le normative vigenti, assicurando che ogni operazione avvenga con il massimo rispetto per la sicurezza dei lavoratori, degli occupanti e dell'ambiente.</p>
-                <p>La rimozione dell'amianto è essenziale non solo per la protezione della salute umana, riducendo l'esposizione a fibre nocive, ma anche per la tutela dell'ambiente, prevenendo contaminazioni future. Utilizziamo metodi all'avanguardia e attrezzature specializzate per garantire che il processo di smaltimento sia gestito in maniera sicura ed ecocompatibile.</p>
-                <h3>Perché scegliere noi?</h3>
-                <ul>
-                    <li>Team certificato con esperienza nella rimozione sicura dell'amianto</li>
-                    <li>Procedure conformi alle normative di sicurezza e ambientali</li>
-                    <li>Soluzioni ecocompatibili per una gestione responsabile dei materiali pericolosi</li>
-                    <li>Assistenza completa, dalla valutazione iniziale alla bonifica finale</li>
-                </ul>
-                <p>Affidati a noi per proteggere la tua salute e l'ambiente, con soluzioni sicure e responsabili per la rimozione dell'amianto dalle tue strutture.</p>
-            </div>           
-            <div class="serviciu">
-                <h2>Lavori Edili - Servizi Completi di Costruzione e Ristrutturazione</h2>
-                <p>La nostra azienda offre una vasta gamma di lavori edili, adattati sia alle esigenze residenziali che a quelle commerciali e industriali. Dalle nuove costruzioni alle ristrutturazioni complesse, il nostro team di professionisti garantisce l'esecuzione di ogni progetto secondo i più alti standard di qualità.</p>
-                <p>Sia che si tratti di muratura, intonacatura, impianti idraulici ed elettrici o rifiniture interne ed esterne, utilizziamo materiali durevoli e tecnologie moderne per offrire risultati duraturi e estetici. Ci concentriamo su efficienza e sostenibilità, garantendo lavori che rispettano le normative di sicurezza e la protezione ambientale.</p>
-                <h3>Perché scegliere noi?</h3>
-                <ul>
-                    <li>Vasta esperienza in tutti i tipi di lavori di costruzione e ristrutturazione</li>
-                    <li>Utilizzo di materiali e tecnologie all'avanguardia</li>
-                    <li>Rispetto delle norme di sicurezza e degli standard di qualità</li>
-                    <li>Supporto completo durante ogni fase del progetto, dalla pianificazione alla consegna finale</li>
-                </ul>
-                <p>Con noi, avrete la sicurezza di un servizio professionale e di alta qualità per ogni tipo di lavoro edile.</p>
-            </div>           
+        </section>
+
+        <section class="services-section">
+            <div class="container">
+                <div class="service-tabs">
+                    <button class="tab-btn active" data-tab="tab1">Coperture Civili</button>
+                    <button class="tab-btn" data-tab="tab2">Coperture Industriali</button>
+                    <button class="tab-btn" data-tab="tab3">Rimozione Amianto</button>
+                    <button class="tab-btn" data-tab="tab4">Lavori Edili</button>
+                </div>
+                
+                <div class="tab-content active" id="tab1">
+                    <div class="service-grid">
+                        <div class="service-image">
+                            <img src="projcompletato2.jpg" alt="Coperture Civili - CRB Lattoneria">
+                        </div>
+                        <div class="service-content">
+                            <h2>Coperture Civili - Soluzioni Durature e Performanti</h2>
+                            <p>La nostra azienda offre servizi professionali e completi di installazione, riparazione e manutenzione di coperture per edifici residenziali e commerciali. Che si tratti di un nuovo progetto o della modernizzazione di una copertura esistente, il nostro team di specialisti garantisce l'esecuzione ai più alti standard di qualità.</p>
+                            <p>Ci vantiamo di utilizzare i materiali più performanti, che garantiscono una lunga durata e resistenza agli agenti esterni, come condizioni meteorologiche avverse. Inoltre, le nostre moderne tecniche di installazione contribuiscono all'efficienza energetica dell'edificio, riducendo la dispersione di calore e migliorando il comfort termico.</p>
+                            <h3>Perché scegliere noi?</h3>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle"></i> Materiali di alta qualità per una copertura duratura</li>
+                                <li><i class="fas fa-check-circle"></i> Tecniche innovative per una maggiore efficienza energetica</li>
+                                <li><i class="fas fa-check-circle"></i> Servizi rapidi e affidabili, adattati alle esigenze di ogni cliente</li>
+                                <li><i class="fas fa-check-circle"></i> Supporto completo dalla consulenza alla realizzazione del progetto</li>
+                            </ul>
+                            <p>Per una copertura che unisce sicurezza ed estetica, scegli i nostri professionisti e goditi una soluzione ottimale per la tua casa o il tuo edificio!</p>
+                            <a href="contact.html" class="btn btn-primary">Richiedi preventivo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tab2">
+                    <div class="service-grid">
+                        <div class="service-image">
+                            <img src="proiect4b.jpg" alt="Coperture Industriali - CRB Lattoneria">
+                        </div>
+                        <div class="service-content">
+                            <h2>Coperture Industriali - Soluzioni Robuste ed Efficienti</h2>
+                            <p>La nostra azienda è specializzata nell'installazione e nella manutenzione di coperture per edifici industriali di grandi dimensioni, offrendo soluzioni durevoli e performanti. Che si tratti di nuove costruzioni o della modernizzazione di strutture esistenti, il nostro team garantisce il rispetto delle più severe norme di sicurezza ed efficienza.</p>
+                            <p>Utilizziamo materiali della migliore qualità, resistenti alle condizioni difficili tipiche degli ambienti industriali, per garantire una protezione ottimale a lungo termine. Le tecnologie di installazione avanzate che adottiamo contribuiscono a migliorare l'efficienza energetica e a ridurre i costi di manutenzione.</p>
+                            <h3>Perché scegliere noi?</h3>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle"></i> Materiali durevoli e resistenti alle condizioni estreme degli ambienti industriali</li>
+                                <li><i class="fas fa-check-circle"></i> Tecniche moderne per una maggiore efficienza energetica</li>
+                                <li><i class="fas fa-check-circle"></i> Esecuzione rapida e affidabile, adattata alle esigenze specifiche di ogni progetto</li>
+                                <li><i class="fas fa-check-circle"></i> Assistenza completa, dalla pianificazione alla realizzazione del progetto</li>
+                            </ul>
+                            <p>Per una copertura industriale che unisce performance e sicurezza, affidatevi a noi e beneficiate di soluzioni di alta qualità per qualsiasi tipo di edificio industriale!</p>
+                            <a href="contact.html" class="btn btn-primary">Richiedi preventivo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tab3">
+                    <div class="service-grid">
+                        <div class="service-image">
+                            <img src="proiect3.jpg" alt="Rimozione Amianto - CRB Lattoneria">
+                        </div>
+                        <div class="service-content">
+                            <h2>Rimozione Amianto - Sicurezza e Protezione per l'Ambiente e la Salute</h2>
+                            <p>Il nostro team certificato offre servizi professionali di rimozione dell'amianto, garantendo l'eliminazione sicura di questo materiale pericoloso da edifici e strutture. Lavoriamo in conformità con tutte le normative vigenti, assicurando che ogni operazione avvenga con il massimo rispetto per la sicurezza dei lavoratori, degli occupanti e dell'ambiente.</p>
+                            <p>La rimozione dell'amianto è essenziale non solo per la protezione della salute umana, riducendo l'esposizione a fibre nocive, ma anche per la tutela dell'ambiente, prevenendo contaminazioni future. Utilizziamo metodi all'avanguardia e attrezzature specializzate per garantire che il processo di smaltimento sia gestito in maniera sicura ed ecocompatibile.</p>
+                            <h3>Perché scegliere noi?</h3>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle"></i> Team certificato con esperienza nella rimozione sicura dell'amianto</li>
+                                <li><i class="fas fa-check-circle"></i> Procedure conformi alle normative di sicurezza e ambientali</li>
+                                <li><i class="fas fa-check-circle"></i> Soluzioni ecocompatibili per una gestione responsabile dei materiali pericolosi</li>
+                                <li><i class="fas fa-check-circle"></i> Assistenza completa, dalla valutazione iniziale alla bonifica finale</li>
+                            </ul>
+                            <p>Affidati a noi per proteggere la tua salute e l'ambiente, con soluzioni sicure e responsabili per la rimozione dell'amianto dalle tue strutture.</p>
+                            <a href="contact.html" class="btn btn-primary">Richiedi preventivo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tab4">
+                    <div class="service-grid">
+                        <div class="service-image">
+                            <img src="proiect4.jpg" alt="Lavori Edili - CRB Lattoneria">
+                        </div>
+                        <div class="service-content">
+                            <h2>Lavori Edili - Servizi Completi di Costruzione e Ristrutturazione</h2>
+                            <p>La nostra azienda offre una vasta gamma di lavori edili, adattati sia alle esigenze residenziali che a quelle commerciali e industriali. Dalle nuove costruzioni alle ristrutturazioni complesse, il nostro team di professionisti garantisce l'esecuzione di ogni progetto secondo i più alti standard di qualità.</p>
+                            <p>Sia che si tratti di muratura, intonacatura, impianti idraulici ed elettrici o rifiniture interne ed esterne, utilizziamo materiali durevoli e tecnologie moderne per offrire risultati duraturi e estetici. Ci concentriamo su efficienza e sostenibilità, garantendo lavori che rispettano le normative di sicurezza e la protezione ambientale.</p>
+                            <h3>Perché scegliere noi?</h3>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle"></i> Vasta esperienza in tutti i tipi di lavori di costruzione e ristrutturazione</li>
+                                <li><i class="fas fa-check-circle"></i> Utilizzo di materiali e tecnologie all'avanguardia</li>
+                                <li><i class="fas fa-check-circle"></i> Rispetto delle norme di sicurezza e degli standard di qualità</li>
+                                <li><i class="fas fa-check-circle"></i> Supporto completo durante ogni fase del progetto, dalla pianificazione alla consegna finale</li>
+                            </ul>
+                            <p>Con noi, avrete la sicurezza di un servizio professionale e di alta qualità per ogni tipo di lavoro edile.</p>
+                            <a href="contact.html" class="btn btn-primary">Richiedi preventivo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header centered">
+                    <h2>Il Nostro Processo</h2>
+                    <p>Come lavoriamo per garantire risultati eccellenti</p>
+                </div>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-comments"></i>
+                            <div class="step-number">1</div>
+                        </div>
+                        <h3>Consulenza iniziale</h3>
+                        <p>Ascoltiamo le tue esigenze e valutiamo il progetto, offrendo consigli professionali e soluzioni personalizzate.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                            <div class="step-number">2</div>
+                        </div>
+                        <h3>Pianificazione</h3>
+                        <p>Sviluppiamo un piano dettagliato, includendo materiali, tempi di esecuzione e costi per garantire trasparenza.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-hard-hat"></i>
+                            <div class="step-number">3</div>
+                        </div>
+                        <h3>Esecuzione</h3>
+                        <p>Il nostro team qualificato esegue i lavori con precisione, rispettando i tempi e gli standard di sicurezza.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <i class="fas fa-check-double"></i>
+                            <div class="step-number">4</div>
+                        </div>
+                        <h3>Collaudo e consegna</h3>
+                        <p>Verifichiamo la qualità del lavoro eseguito e ti consegniamo il progetto completato, con garanzie sulla qualità.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header centered">
+                    <h2>Cosa dicono i nostri clienti</h2>
+                    <p>Testimonianze di chi ha scelto i nostri servizi</p>
+                </div>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">Ho scelto CRB Lattoneria per la rimozione dell'amianto dal tetto della mia casa. Sono stati professionali, veloci e hanno garantito la massima sicurezza durante tutto il processo. Altamente raccomandati!</p>
+                            <div class="testimonial-author">
+                                <h4>Marco Bianchi</h4>
+                                <p>Proprietario di casa, Parma</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">Per il nostro capannone industriale avevamo bisogno di una copertura di alta qualità. CRB Lattoneria ha completato il lavoro in tempi record e con risultati eccellenti. La loro expertise nel settore è evidente.</p>
+                            <div class="testimonial-author">
+                                <h4>Luca Verdi</h4>
+                                <p>Direttore operativo, Industrie Modena</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">Grazie a CRB Lattoneria per l'eccellente lavoro di ristrutturazione della nostra copertura. Il team è stato attento ai dettagli e ha rispettato perfettamente le tempistiche. Ottimo rapporto qualità-prezzo!</p>
+                            <div class="testimonial-author">
+                                <h4>Giulia Rossi</h4>
+                                <p>Amministratore condominio, Bologna</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Pronto a realizzare il tuo progetto?</h2>
+                    <p>Contattaci oggi stesso per un preventivo gratuito e senza impegno.</p>
+                    <a href="contact.html" class="btn btn-light">Contattaci ora</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>CRB LATTONERIA</h3>
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/your-page" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/your-page" target="_blank"><i class="fab fa-instagram"></i></a>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section brand">
+                    <h3>CRB LATTONERIA</h3>
+                    <p>Artigiani del metallo, dedicati alla qualità e alla protezione</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/your-page" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/your-page" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:info@crblattoneria.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section contact-info">
+                    <h3>Contatto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Via Parma, 7<br>43039 Salsomaggiore Terme (PR)</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>366.7003776</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@crblattoneria.com</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>I Nostri Servizi</h3>
+                    <ul>
+                        <li><a href="servicii.html">Coperture Civili</a></li>
+                        <li><a href="servicii.html">Coperture Industriali</a></li>
+                        <li><a href="servicii.html">Rimozione Amianto</a></li>
+                        <li><a href="servicii.html">Lavori Edili</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section quick-links">
+                    <h3>Navigazione rapida</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="despre.html">Chi siamo</a></li>
+                        <li><a href="servicii.html">I Nostri Servizi</a></li>
+                        <li><a href="portofoliu.html">Portafoglio</a></li>
+                        <li><a href="contact.html">Contattaci</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-section">
-                <h3>Contatto</h3>
-                <p>Via Parma, 7 43039 Salsomaggiore Terme (PR)</p>
-                <p>Cell: 366.7003776</p>
-                <p>Email: info@crblattoneria.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>I Nostri Servizi</h3>
-                <ul>
-                    <li><a href="servicii.html">Coperture Civili</a></li>
-                    <li><a href="servicii.html">Rimozione Amianto</a></li>
-                    <li><a href="servicii.html">Lavori Edili</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Navigazione rapida</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="despre.html">Chi siamo</a></li>
-                    <li><a href="servicii.html">I Nostri Servizi</a></li>
-                    <li><a href="portofoliu.html">Portofoliu</a></li>
-                    <li><a href="contact.html">Contattaci</a></li>
-                </ul>
-            </div>
         </div>
+        
         <div class="footer-bottom">
-            <p>&copy; 2024 CRB Lattoneria. Tutti i diritti riservati.</p>
+            <div class="container">
+                <p>&copy; 2024 CRB Lattoneria. Tutti i diritti riservati.</p>
+            </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
     
+    <script src="script.js"></script>
 </body>
 </html>
