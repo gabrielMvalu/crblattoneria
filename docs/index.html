@@ -22,7 +22,10 @@
     <meta name="twitter:image" content="https://www.crblattoneria.com/images/twitter_image.jpg">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBKMEPQF91"></script>
@@ -59,114 +62,176 @@
       "openingHours": "Mo,Tu,We,Th,Fr 08:00-18:00"
     }
     </script>
-
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="logocrblattoneria.png" alt="CRB Lattoneria Logo - Coperture Civili e Industriali">
-        </div>
-        <nav>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="despre.html">Chi siamo</a></li>
-                <li><a href="servicii.html">I Nostri Servizi</a></li>
-                <li><a href="portofoliu.html">Portafoglio</a></li>
-                <li><a href="contact.html">Contattaci</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="acasa">
-            <h1>CRB Lattoneria – Protezione e stile per ogni tetto</h1>
-            <p>Artigiani del metallo, dedicati alla qualità e alla protezione per ogni costruzione.</p>
-        </section>
-
-        <section id="prezentare">
-            <div class="card">
-                <h3>Chi siamo</h3>
-                <p>Alla CRB LATTONERIA, offriamo servizi di lattoneria su misura, garantendo qualità duratura. Siamo esperti nel fornire protezione e stile, con attenzione ai dettagli e resistenza. Con esperienza nelle coperture civili e industriali, rimozione amianto e lavori edili, ci impegniamo a proteggere l'ambiente e la salute, mantenendo elevati standard professionali e sicurezza per i nostri clienti.</p>
-                <a href="despre.html">Leggi di più</a>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logocrblattoneria.png" alt="CRB Lattoneria Logo - Coperture Civili e Industriali">
+                </a>
             </div>
-            <div class="card">
-                <h3>I Nostri Servizi</h3>
-                <p>Offriamo una vasta gamma di servizi professionali: coperture civili e industriali, rimozione amianto e lavori edili. Scopri di più sui nostri servizi di alta qualità.</p>
-                <div class="images">
-                    <img src="amianto.jpg" alt="Rimozione Amianto - Servizio di CRB Lattoneria" style="width:35%; margin-top:10px; border-radius: 15px;">
-                    <img src="coperture.jpg" alt="Coperture Civili e Industriali - CRB Lattoneria" style="width:35%; margin-top:10px; border-radius: 15px;">
-                    <img src="edili.jpg" alt="Lavori Edili - Servizio CRB Lattoneria" style="width:35%; margin-top:10px; border-radius: 15px;">
-                </div>
-                <a href="servicii.html">Leggi di più</a>
-            </div>
-            <div class="card">
-                <h3>Portafoglio</h3>
-                <p>Esplora i nostri progetti completati con successo.</p>
-                <div class="images">
-                    <img src="proiect1.jpg" alt="Progetto 1 - Coperture Civili" style="width:45%; margin-top:10px; border-radius: 15px;">
-                    <img src="proiect2.jpg" alt="Progetto 2 - Coperture Industriali" style="width:45%; margin-top:10px; border-radius: 15px;">
-                    <img src="proiect3.jpg" alt="Progetto 3 - Rimozione Amianto" style="width:45%; margin-top:10px; border-radius: 15px;">
-                </div>
-                <a href="portofoliu.html">Leggi di più</a>
-            </div>
-            <div class="card">
-                <h3>Contatto</h3>
-                <p>Contattaci per un preventivo personalizzato.</p>
-                <div class="contact-icons">
-                    <i class="fas fa-phone"></i>
-                    <i class="fas fa-envelope"></i>
-                    <i class="fas fa-clock"></i>
-                </div>
-                <a href="contact.html">Contattaci</a>
-            </div>                  
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>CRB LATTONERIA</h3>
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/your-page" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/your-page" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>Contatto</h3>
-                <p>Via Parma, 7 43039 Salsomaggiore Terme (PR)</p>
-                <p>Cell: 366.7003776</p>
-                <p>Email: info@crblattoneria.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>I Nostri Servizi</h3>
-                <ul>
-                    <li><a href="servicii.html">Coperture Civili</a></li>
-                    <li><a href="servicii.html">Rimozione Amianto</a></li>
-                    <li><a href="servicii.html">Lavori Edili</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Navigazione rapida</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Menu principale">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="despre.html">Chi siamo</a></li>
                     <li><a href="servicii.html">I Nostri Servizi</a></li>
                     <li><a href="portofoliu.html">Portafoglio</a></li>
                     <li><a href="contact.html">Contattaci</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="acasa">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>CRB Lattoneria</h1>
+                    <p class="subtitle">Protezione e stile per ogni tetto</p>
+                    <div class="hero-tagline">Artigiani del metallo, dedicati alla qualità e alla protezione per ogni costruzione.</div>
+                    <div class="hero-cta">
+                        <a href="contact.html" class="btn btn-primary">Contattaci</a>
+                        <a href="servicii.html" class="btn btn-secondary">Scopri i servizi</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="prezentare">
+            <div class="container">
+                <div class="section-header">
+                    <h2>I nostri punti di forza</h2>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Chi siamo</h3>
+                        <p>Alla CRB LATTONERIA, offriamo servizi di lattoneria su misura, garantendo qualità duratura. Siamo esperti nel fornire protezione e stile, con attenzione ai dettagli e resistenza.</p>
+                        <a href="despre.html" class="btn-text">Leggi di più <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>I Nostri Servizi</h3>
+                        <p>Offriamo una vasta gamma di servizi professionali: coperture civili e industriali, rimozione amianto e lavori edili.</p>
+                        <div class="service-images">
+                            <img src="amianto.jpg" alt="Rimozione Amianto - Servizio di CRB Lattoneria">
+                            <img src="coperture.jpg" alt="Coperture Civili e Industriali - CRB Lattoneria">
+                            <img src="edili.jpg" alt="Lavori Edili - Servizio CRB Lattoneria">
+                        </div>
+                        <a href="servicii.html" class="btn-text">Scopri tutti i servizi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <h3>Portafoglio</h3>
+                        <p>Esplora i nostri progetti completati con successo in diversi settori.</p>
+                        <div class="project-gallery">
+                            <img src="proiect1.jpg" alt="Progetto 1 - Coperture Civili">
+                            <img src="proiect2.jpg" alt="Progetto 2 - Coperture Industriali">
+                            <img src="proiect3.jpg" alt="Progetto 3 - Rimozione Amianto">
+                        </div>
+                        <a href="portofoliu.html" class="btn-text">Vedi tutti i progetti <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Contatto</h3>
+                        <p>Contattaci per un preventivo personalizzato e gratuito per il tuo progetto.</p>
+                        <div class="contact-details">
+                            <div><i class="fas fa-phone"></i> <span>366 700 3776</span></div>
+                            <div><i class="fas fa-envelope"></i> <span>info@crblattoneria.com</span></div>
+                            <div><i class="fas fa-map-marker-alt"></i> <span>Via Parma, 7 - Salsomaggiore Terme</span></div>
+                        </div>
+                        <a href="contact.html" class="btn-text">Contattaci ora <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>                
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Hai un progetto in mente?</h2>
+                    <p>Contattaci oggi stesso per una consulenza gratuita e un preventivo personalizzato.</p>
+                    <a href="contact.html" class="btn btn-light">Richiedi preventivo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section brand">
+                    <h3>CRB LATTONERIA</h3>
+                    <p>Artigiani del metallo, dedicati alla qualità e alla protezione</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/your-page" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/your-page" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:info@crblattoneria.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section contact-info">
+                    <h3>Contatto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Via Parma, 7<br>43039 Salsomaggiore Terme (PR)</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>366.7003776</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@crblattoneria.com</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>I Nostri Servizi</h3>
+                    <ul>
+                        <li><a href="servicii.html">Coperture Civili</a></li>
+                        <li><a href="servicii.html">Coperture Industriali</a></li>
+                        <li><a href="servicii.html">Rimozione Amianto</a></li>
+                        <li><a href="servicii.html">Lavori Edili</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section quick-links">
+                    <h3>Navigazione rapida</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="despre.html">Chi siamo</a></li>
+                        <li><a href="servicii.html">I Nostri Servizi</a></li>
+                        <li><a href="portofoliu.html">Portafoglio</a></li>
+                        <li><a href="contact.html">Contattaci</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+        
         <div class="footer-bottom">
-            <p>&copy; 2024 CRB Lattoneria. Tutti i diritti riservati.</p>
+            <div class="container">
+                <p>&copy; 2024 CRB Lattoneria. Tutti i diritti riservati.</p>
+            </div>
         </div>
     </footer>
     
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
