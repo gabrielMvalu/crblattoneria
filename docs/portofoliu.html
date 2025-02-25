@@ -2,109 +2,332 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Portafoglio - CRB Lattoneria</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="logocrblattoneria.png" alt="CRB Lattoneria Logo">
-        </div>
-        <nav>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="despre.html">Chi siamo</a></li>
-                <li><a href="servicii.html">I Nostri Servizi</a></li>
-                <li><a href="portofoliu.html">Portafoglio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="acasa">
-            <h1>Il Nostro Portafoglio</h1>
-        </section>
-        <section class="portofoliu">
-            <div class="proiect">
-                <img src="proiect1.jpg" alt="Progetto 1">
-                <h2>Tetto Residenziale Moderno</h2>
-                <p>Installazione di un tetto per una casa moderna, utilizzando materiali di alta qualità e un design innovativo.</p>
-            </div>
-            <div class="proiect">
-                <img src="proiect2.jpg" alt="Progetto 2">
-                <h2>Ristrutturazione Tetto Industriale</h2>
-                <p>Ristrutturazione completa del tetto di una fabbrica, migliorando l'efficienza energetica e la sicurezza.</p>
-            </div>
-            <div class="proiect">
-                <img src="proiect3.jpg" alt="Progetto 3">
-                <h2>Rimozione Amianto Edificio Commerciale</h2>
-                <p>Rimozione sicura dell'amianto da un edificio per uffici, rispettando tutte le normative di sicurezza.</p>
-            </div>
-            <div class="proiect">
-                <div class="grid-imagini">
-                    <img src="Laur1.jpg" alt="Laur 1">
-                    <img src="imbinare1.jpg" alt="Imbinare 1">
-                    <img src="imbinaref1.jpg" alt="Imbinare Finala 1">
-                </div>
-                <h2>Costruzione Annesso Residenziale</h2>
-                <p>Progettazione e costruzione di un annesso per una casa esistente, inclusi tetto e finiture.</p>
-            </div>
-            <div class="proiect">
-                <div class="grid-imagini">
-                    <img src="proiect4d.jpg" alt="Laur 2">
-                    <img src="proiect4a.jpg" alt="proiect4a">
-                    <img src="proiect4b.jpg" alt="proiect4b">
-                    <img src="proiect4b.jpg" alt="proiect4b">
-                </div>
-                <h2>Copertura Industriale in Pannelli Sandwich</h2> 
-                <p>Progettazione e realizzazione di un sistema di copertura industriale con pannelli sandwich, inclusi struttura metallica, isolamento termico e finiture tecniche.</p>
-            </div>
-        </section>
-    </main>
+    <meta name="description" content="Esplora i nostri progetti completati: coperture civili, coperture industriali, rimozione amianto e lavori edili di alta qualità.">
+    <meta name="keywords" content="portfolio lattoneria, progetti coperture, lavori completati, CRB Lattoneria, rimozione amianto">
     
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>CRB LATTONERIA</h3>
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/your-page" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/your-page" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logocrblattoneria.png" alt="CRB Lattoneria Logo">
+                </a>
             </div>
-            <div class="footer-section">
-                <h3>Contatto</h3>
-                <p>Via Parma, 7 43039 Salsomaggiore Terme (PR)</p>
-                <p>Cell: 366.7003776</p>
-                <p>Email: info@crblattoneria.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>I Nostri Servizi</h3>
-                <ul>
-                    <li><a href="servicii.html">Coperture Civili</a></li>
-                    <li><a href="servicii.html">Rimozione Amianto</a></li>
-                    <li><a href="servicii.html">Lavori Edili</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Navigazione rapida</h3>
-                <ul>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Menu principale">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="despre.html">Chi siamo</a></li>
                     <li><a href="servicii.html">I Nostri Servizi</a></li>
-                    <li><a href="portofoliu.html">Portafoglio</a></li>
+                    <li><a href="portofoliu.html" class="active">Portafoglio</a></li>
                     <li><a href="contact.html">Contattaci</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" id="acasa">
+            <div class="container">
+                <h1>Il Nostro Portafoglio</h1>
+                <p class="subtitle">I progetti che testimoniano la nostra qualità</p>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <div class="container">
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Tutti</button>
+                    <button class="filter-btn" data-filter="residential">Residenziale</button>
+                    <button class="filter-btn" data-filter="industrial">Industriale</button>
+                    <button class="filter-btn" data-filter="asbestos">Rimozione Amianto</button>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="residential">
+                        <div class="portfolio-image">
+                            <img src="projcompletato2.jpg" alt="Tetto Residenziale Moderno">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Tetto Residenziale Moderno</h3>
+                                    <a href="#project1" class="btn btn-light btn-sm portfolio-details-trigger">Vedere dettagli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="industrial">
+                        <div class="portfolio-image">
+                            <img src="proiect2.jpg" alt="Ristrutturazione Tetto Industriale">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Ristrutturazione Tetto Industriale</h3>
+                                    <a href="#project2" class="btn btn-light btn-sm portfolio-details-trigger">Vedere dettagli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="asbestos">
+                        <div class="portfolio-image">
+                            <img src="proiect3.jpg" alt="Rimozione Amianto Edificio Commerciale">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Rimozione Amianto</h3>
+                                    <a href="#project3" class="btn btn-light btn-sm portfolio-details-trigger">Vedere dettagli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="residential">
+                        <div class="portfolio-image">
+                            <div class="image-gallery">
+                                <img src="Laur1.jpg" alt="Costruzione Annesso Residenziale - Fase 1">
+                                <img src="imbinare1.jpg" alt="Costruzione Annesso Residenziale - Fase 2">
+                                <img src="imbinaref1.jpg" alt="Costruzione Annesso Residenziale - Fase Finale">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Costruzione Annesso Residenziale</h3>
+                                    <a href="#project4" class="btn btn-light btn-sm portfolio-details-trigger">Vedere dettagli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="industrial">
+                        <div class="portfolio-image">
+                            <div class="image-gallery">
+                                <img src="proiect4d.jpg" alt="Copertura Industriale - Vista 1">
+                                <img src="proiect4a.jpg" alt="Copertura Industriale - Vista 2">
+                                <img src="proiect4b.jpg" alt="Copertura Industriale - Vista 3">
+                                <img src="proiect4b.jpg" alt="Copertura Industriale - Vista 4">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <h3>Copertura Industriale in Pannelli Sandwich</h3>
+                                    <a href="#project5" class="btn btn-light btn-sm portfolio-details-trigger">Vedere dettagli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Details Modals -->
+        <div id="project1" class="portfolio-modal">
+            <div class="portfolio-modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="portfolio-modal-header">
+                    <h2>Tetto Residenziale Moderno</h2>
+                </div>
+                <div class="portfolio-modal-body">
+                    <div class="portfolio-modal-image">
+                        <img src="projcompletato2.jpg" alt="Tetto Residenziale Moderno">
+                    </div>
+                    <div class="portfolio-modal-description">
+                        <p>Installazione di un tetto per una casa moderna, utilizzando materiali di alta qualità e un design innovativo.</p>
+                        <h3>Servizi forniti:</h3>
+                        <ul>
+                            <li>Progettazione tecnica</li>
+                            <li>Fornitura di materiali premium</li>
+                            <li>Installazione completa</li>
+                            <li>Impermeabilizzazione</li>
+                            <li>Isolamento termico</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <div id="project2" class="portfolio-modal">
+            <div class="portfolio-modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="portfolio-modal-header">
+                    <h2>Ristrutturazione Tetto Industriale</h2>
+                </div>
+                <div class="portfolio-modal-body">
+                    <div class="portfolio-modal-image">
+                        <img src="proiect2.jpg" alt="Ristrutturazione Tetto Industriale">
+                    </div>
+                    <div class="portfolio-modal-description">
+                        <p>Ristrutturazione completa del tetto di una fabbrica, migliorando l'efficienza energetica e la sicurezza.</p>
+                        <h3>Servizi forniti:</h3>
+                        <ul>
+                            <li>Valutazione strutturale</li>
+                            <li>Rimozione vecchio tetto</li>
+                            <li>Installazione di nuova struttura</li>
+                            <li>Isolamento termico avanzato</li>
+                            <li>Sistemi di drenaggio migliorati</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="project3" class="portfolio-modal">
+            <div class="portfolio-modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="portfolio-modal-header">
+                    <h2>Rimozione Amianto Edificio Commerciale</h2>
+                </div>
+                <div class="portfolio-modal-body">
+                    <div class="portfolio-modal-image">
+                        <img src="proiect3.jpg" alt="Rimozione Amianto Edificio Commerciale">
+                    </div>
+                    <div class="portfolio-modal-description">
+                        <p>Rimozione sicura dell'amianto da un edificio per uffici, rispettando tutte le normative di sicurezza.</p>
+                        <h3>Servizi forniti:</h3>
+                        <ul>
+                            <li>Valutazione e piano di rimozione</li>
+                            <li>Contenimento area di lavoro</li>
+                            <li>Rimozione amianto certificata</li>
+                            <li>Smaltimento sicuro</li>
+                            <li>Certificazione finale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="project4" class="portfolio-modal">
+            <div class="portfolio-modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="portfolio-modal-header">
+                    <h2>Costruzione Annesso Residenziale</h2>
+                </div>
+                <div class="portfolio-modal-body">
+                    <div class="portfolio-modal-gallery">
+                        <img src="Laur1.jpg" alt="Fase 1">
+                        <img src="imbinare1.jpg" alt="Fase 2">
+                        <img src="imbinaref1.jpg" alt="Fase Finale">
+                    </div>
+                    <div class="portfolio-modal-description">
+                        <p>Progettazione e costruzione di un annesso per una casa esistente, inclusi tetto e finiture.</p>
+                        <h3>Servizi forniti:</h3>
+                        <ul>
+                            <li>Progettazione architettonica</li>
+                            <li>Costruzione fondamenta</li>
+                            <li>Struttura e muri</li>
+                            <li>Installazione tetto</li>
+                            <li>Finiture interne ed esterne</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="project5" class="portfolio-modal">
+            <div class="portfolio-modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="portfolio-modal-header">
+                    <h2>Copertura Industriale in Pannelli Sandwich</h2>
+                </div>
+                <div class="portfolio-modal-body">
+                    <div class="portfolio-modal-gallery">
+                        <img src="proiect4d.jpg" alt="Vista 1">
+                        <img src="proiect4a.jpg" alt="Vista 2">
+                        <img src="proiect4b.jpg" alt="Vista 3">
+                        <img src="proiect4b.jpg" alt="Vista 4">
+                    </div>
+                    <div class="portfolio-modal-description">
+                        <p>Progettazione e realizzazione di un sistema di copertura industriale con pannelli sandwich, inclusi struttura metallica, isolamento termico e finiture tecniche.</p>
+                        <h3>Servizi forniti:</h3>
+                        <ul>
+                            <li>Progettazione strutturale</li>
+                            <li>Fornitura pannelli sandwich</li>
+                            <li>Installazione struttura portante</li>
+                            <li>Montaggio pannelli</li>
+                            <li>Finiture e dettagli tecnici</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Hai un progetto simile in mente?</h2>
+                    <p>Contattaci oggi stesso per discutere di come possiamo aiutarti.</p>
+                    <a href="contact.html" class="btn btn-light">Richiedi un preventivo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section brand">
+                    <h3>CRB LATTONERIA</h3>
+                    <p>Artigiani del metallo, dedicati alla qualità e alla protezione</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/your-page" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/your-page" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:info@crblattoneria.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section contact-info">
+                    <h3>Contatto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Via Parma, 7<br>43039 Salsomaggiore Terme (PR)</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>366.7003776</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@crblattoneria.com</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>I Nostri Servizi</h3>
+                    <ul>
+                        <li><a href="servicii.html">Coperture Civili</a></li>
+                        <li><a href="servicii.html">Coperture Industriali</a></li>
+                        <li><a href="servicii.html">Rimozione Amianto</a></li>
+                        <li><a href="servicii.html">Lavori Edili</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section quick-links">
+                    <h3>Navigazione rapida</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="despre.html">Chi siamo</a></li>
+                        <li><a href="servicii.html">I Nostri Servizi</a></li>
+                        <li><a href="portofoliu.html">Portafoglio</a></li>
+                        <li><a href="contact.html">Contattaci</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
         <div class="footer-bottom">
-            <p>&copy; 2024 CRB Lattoneria. Tutti i diritti riservati.</p>
+            <div class="container">
+                <p>&copy; 2024 CRB Lattoneria. Tutti i diritti riservati.</p>
+            </div>
         </div>
     </footer>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
